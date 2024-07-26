@@ -14,7 +14,7 @@
         $result = mysqli_query($conn,$select);
 
         if (!$result) {
-            die('Book Not Updated'.mysqli_error);
+            die('Book Not Updated');
         }else{
             $row = mysqli_fetch_assoc($result);
         }
@@ -42,7 +42,7 @@
         $result = mysqli_query($conn,$update);
 
         if (!$result) {
-            die('Book Not Updated'.mysqli_error);
+            die('Book Not Updated');
         }else{
             header('location:book.php?update=You Have Updated a Book Successfully.');
         }
