@@ -15,7 +15,7 @@
         $result = mysqli_query($conn,$delete);
 
         if (!$result) {
-            die('Book Not Deleted'.mysqli_error);
+            die('Book Not Deleted');
         }else{
             header('location:fav.php?delete_msg=You Deleted Your Favourite Book');
         }
