@@ -12,7 +12,7 @@
         $result = mysqli_query($conn,$delete);
 
         if (!$result) {
-            die('Book Not Deleted'.mysqli_error);
+            die('Book Not Deleted');
         }else{
             header('location:book.php?delete_msg=Book Deleted ');
         }
